@@ -2,7 +2,15 @@
 const burgerEl = document.getElementById('burger');
 if (burgerEl) {
   burgerEl.addEventListener('click', () => {
-    document.querySelector('.nav__links').classList.toggle('open');
+    const links = document.querySelector('.nav__links');
+    const isOpen = links.classList.toggle('open');
+    burgerEl.setAttribute('aria-expanded', String(isOpen));
+  });
+  document.querySelectorAll('.nav__links a').forEach((link) => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav__links').classList.remove('open');
+      burgerEl.setAttribute('aria-expanded', 'false');
+    });
   });
 }
 
