@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt – FCS Fußball Club Sozial e.V.</title>
+<meta name="description" content="Kontaktiere den FCS Fußball Club Sozial e.V. — Geschäftsstelle, Telefon, E-Mail und Nachrichtenformular.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="preloader"><span class="preloader__ball">⚽</span><span class="preloader__text">FCS lädt …</span></div>
+
+<div class="utility-bar">
+  <span>Soziales Projekt · Saison 25/26</span>
+  <span class="utility-bar__right"><a href="#" class="lang">DE / EN</a><a href="mitglied-werden.html" class="member-link">★ Mitglied werden</a></span>
+</div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__brand">
+    <span class="logo">FCS</span>
+    <span class="nav__name">Fußball Club Sozial</span>
+  </a>
+  <nav class="nav__links">
+    <a href="index.html">Start</a>
+    <a href="news.html">News</a>
+    <a href="team.html">Team</a>
+    <a href="spielplan.html">Spielplan</a>
+    <a href="verein.html">Verein</a>
+    <a href="kontakt.html" class="active">Kontakt</a>
+  </nav>
+  <div class="nav__actions">
+    <button class="icon-btn" aria-label="Suche">⌕</button>
+    <a href="mitglied-werden.html" class="btn btn--ghost-dark">Tickets</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menü öffnen">☰</button>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero__inner">
+    <h1>Kontakt</h1>
+    <p>Wir freuen uns auf deine Nachricht</p>
+  </div>
+</section>
+
+<div style="padding:24px;">
+  <div class="contact-map reveal" data-clickable onclick="alert('Anbindung an Google/Apple Maps folgt in Kürze.')">
+    <span style="font:600 11px 'JetBrains Mono',ui-monospace,monospace;color:#777;background:#fff;padding:4px 9px;border-radius:4px;">karte · sportplatz.map</span>
+    <div class="pin"></div>
+  </div>
+</div>
+
+<div class="contact-grid reveal">
+  <div class="contact-info">
+    <h3>Geschäftsstelle</h3>
+    <p><b>Sportplatz Mühlenweg 3</b><br>12345 Musterstadt<br><br>Tel · 0123 / 456 789<br>info@fcs-sozial.de</p>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram">📷</a>
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="#" aria-label="TikTok">🎵</a>
+    </div>
+  </div>
+  <div class="contact-form">
+    <h3>Nachricht</h3>
+    <form data-demo-form>
+      <div class="form-field"><label for="k-name">Name</label><input type="text" id="k-name" name="name" required></div>
+      <div class="form-field"><label for="k-email">E-Mail</label><input type="email" id="k-email" name="email" required></div>
+      <div class="form-field"><label for="k-message">Nachricht</label><textarea id="k-message" name="message" required></textarea></div>
+      <button type="submit" class="form-submit">Senden →</button>
+      <div class="form-success">Danke für deine Nachricht! Wir melden uns so schnell wie möglich.</div>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__brand">FCS <span>e.V.</span></div>
+  <nav class="footer__links">
+    <a href="verein.html">Verein</a> · <a href="news.html">News</a> · <a href="team.html">Team</a><br>
+    <a href="#">Datenschutz</a> · <a href="#">Impressum</a>
+  </nav>
+  <div class="footer__copy">© 2026 Fußball Club Sozial e.V.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
